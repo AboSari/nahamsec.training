@@ -24,7 +24,7 @@
                     <?php
                     $host = str_replace("www.","", $_SERVER["HTTP_HOST"] );
                     foreach( $data as $module=>$foobar ){ ?>
-                        <li><a href="http://<?php echo $module.'.'.$host;?>" target="_blank"><?php echo $module; ?></a></li>
+                        <li><a href="http://<?php echo $host.'/'.$module;?>" target="_blank"><?php echo $module; ?></a></li>
                     <?php } ?>
                     </ul>
                 </div>
